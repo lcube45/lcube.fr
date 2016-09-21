@@ -10,6 +10,10 @@ http://nvie.com/posts/a-successful-git-branching-model/
 Drupal console
 https://hechoendrupal.gitbooks.io/drupal-console/content/en/index.html
 
+```shell
+$ drupal chain --file==install.yml
+```
+
 ```yaml
 commands:
 # Download Drupal
