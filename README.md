@@ -7,11 +7,22 @@ Day 1
 Git workflow
 http://nvie.com/posts/a-successful-git-branching-model/
 
+```shell
+$ git init
+$ git add .
+$ git commit -m "init codebase"
+$ git remote add origin <remote github url>
+$ git remote -v
+$ git push -u origin master
+$ git checkout -b <branch name>
+$ git push -u origin <branch name>
+```
+
 Drupal console
 https://hechoendrupal.gitbooks.io/drupal-console/content/en/index.html
 
 ```shell
-$ drupal chain --file==install.yml
+$ drupal chain --file=install.yml
 ```
 
 ```yaml
