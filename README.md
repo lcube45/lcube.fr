@@ -53,3 +53,30 @@ commands:
 # Start php built-in server
   - command: server
 ```
+
+Day 2
+-----
+
+https://drushcommands.com/
+
+```shell
+$ drush make lcube.dev.make --no-core
+```
+
+```yaml
+core = 8.x
+api = 2
+defaults[projects][subdir] = contrib
+
+projects[config_update][type] = module
+projects[config_update][download][type] = git
+projects[config_update][download][url] = https://git.drupal.org/project/config_update.git
+projects[config_update][download][tag] = 8.x-1.1
+
+projects[ctools][type] = module
+projects[ctools][download][type] = git
+projects[ctools][download][url] = https://git.drupal.org/project/ctools
+projects[ctools][download][tag] = 8.x-3.0-alpha27
+
+...
+```
